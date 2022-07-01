@@ -3,8 +3,8 @@ namespace ColorBallsWithProperties
     public class Color
     {
         private int red, green, blue, alpha;
+        private float greyValue;
 
-        
 
         public int Red
         {
@@ -49,12 +49,21 @@ namespace ColorBallsWithProperties
             }
         }
 
-        public int GreyValue
+        public float GreyValue
         {
             set
             {
-                va
+                this.greyValue = value;
+                value = (red + green + blue) / 3;
             }
+        }
+
+        public Color(int red, int green, int blue, int alpha)
+        {
+            this.red = red;
+            this.green = green;
+            this.blue = blue;
+            this.alpha = 100;
         }
     }
 }
