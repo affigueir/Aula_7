@@ -65,5 +65,20 @@ namespace ColorBallsWithProperties
             this.blue = blue;
             this.alpha = 100;
         }
+
+        public string Name
+        {
+            get
+            {
+                if (Blue == 0 && Green == 0) return "Color is pure red!";
+                else if (Blue == 0 && Red == 0) return "Color is pure green!";
+                else if (Red == 0 && Green == 0) return "Color is pure blue";
+                else return "Color is mixed";
+            }
+        }
+
+
+        
+
     }
 }

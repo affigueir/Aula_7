@@ -11,9 +11,9 @@ namespace ColorBallsWithProperties
 
             System.Console.WriteLine(ball1Color.Red);
 
-            ball1Color.Red = 155;
+            //ball1Color.Blue = 155;
 
-            System.Console.WriteLine(ball1Color.Red);
+            System.Console.WriteLine(ball1Color.Blue);
 
             ball1.CheckRadius();
 
@@ -29,8 +29,9 @@ namespace ColorBallsWithProperties
 
             ball1.Radius = 5f;
             ball1.ThrowMore();
-            
+
             System.Console.WriteLine(ball1.TimesThrown);
+            System.Console.WriteLine(ball1Color.Name);
         }
     }
 }
